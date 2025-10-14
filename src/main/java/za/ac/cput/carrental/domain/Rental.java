@@ -1,6 +1,8 @@
 
 package za.ac.cput.carrental.domain;
 
+import java.time.LocalDateTime;
+
 /**
  *
  * @author Zahrah Vermaak 
@@ -15,7 +17,7 @@ public class Rental {
     
     
 
-    public Rental(String vehicleRegistration, String customerId, localDate dateOfCollection, localDate dateOfReturn) {
+    public Rental(String vehicleRegistration, String customerId, LocalDateTime dateOfCollection, LocalDateTime dateOfReturn) {
         this.vehicleRegistration = vehicleRegistration;
         this.customerId = customerId;
         this.dateOfCollection = dateOfCollection;
@@ -30,11 +32,11 @@ public class Rental {
         return customerId;
     }
 
-    public localDate getDateOfCollection() {
+    public LocalDateTime getDateOfCollection() {
         return dateOfCollection;
     }
 
-    public localDate getDateOfReturn() {
+    public LocalDateTime getDateOfReturn() {
         return dateOfReturn;
     }
 
@@ -46,11 +48,11 @@ public class Rental {
         this.customerId = customerId;
     }
 
-    public void setDateOfCollection(localDate dateOfCollection) {
+    public void setDateOfCollection(LocalDateTime dateOfCollection) {
         this.dateOfCollection = dateOfCollection;
     }
 
-    public void setDateOfReturn(localDate dateOfReturn) {
+    public void setDateOfReturn(LocalDateTime dateOfReturn) {
         this.dateOfReturn = dateOfReturn;
     }
 
