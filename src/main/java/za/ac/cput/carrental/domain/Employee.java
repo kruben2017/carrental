@@ -13,6 +13,15 @@ public class Employee {
     private String employeeName; 
     private String employeeSurname;
 
+    public Employee() {
+    }
+
+    public Employee(String employeeID, String employeeName, String employeeSurname) {
+        this.employeeID = employeeID;
+        this.employeeName = employeeName;
+        this.employeeSurname = employeeSurname;
+    }
+
     public String getEmployeeID() {
         return employeeID;
     }
@@ -41,6 +50,8 @@ public class Employee {
     public String toString() {
         return "Employee{" + "employeeID=" + employeeID + ", employeeName=" + employeeName + ", employeeSurname=" + employeeSurname + '}';
     }
+
+    
     
     
 }
