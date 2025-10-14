@@ -9,21 +9,24 @@ package za.ac.cput.carrental.domain;
  * @author mogamatyaseenkannemeyer
  */
 public class Address {
+
     private String streetName;
     private String streetNumber;
-    private String Suburb;
-    private String City;
-    private String Country;
+    private String suburb;
+    private String city;
+    private String country;
+    private String province;
 
     public Address() {
     }
 
-    public Address(String streetName, String streetNumber, String Suburb, String City, String Country) {
+    public Address(String streetName, String streetNumber, String suburb, String city, String country, String province) {
         this.streetName = streetName;
         this.streetNumber = streetNumber;
-        this.Suburb = Suburb;
-        this.City = City;
-        this.Country = Country;
+        this.suburb = suburb;
+        this.city = city;
+        this.country = country;
+        this.province = province;
     }
 
     public String getStreetName() {
@@ -43,34 +46,39 @@ public class Address {
     }
 
     public String getSuburb() {
-        return Suburb;
+        return suburb;
     }
 
-    public void setSuburb(String Suburb) {
-        this.Suburb = Suburb;
+    public void setSuburb(String suburb) {
+        this.suburb = suburb;
     }
 
     public String getCity() {
-        return City;
+        return city;
     }
 
-    public void setCity(String City) {
-        this.City = City;
+    public void setCity(String city) {
+        this.city = city;
     }
 
     public String getCountry() {
-        return Country;
+        return country;
     }
 
-    public void setCountry(String Country) {
-        this.Country = Country;
+    public void setCountry(String country) {
+        this.country = country;
+    }
+
+    public String getProvince() {
+        return province;
+    }
+
+    public void setProvince(String province) {
+        this.province = province;
     }
 
     @Override
     public String toString() {
-        return "Address{" + "streetName=" + streetName + ", streetNumber=" + streetNumber + ", Suburb=" + Suburb + ", City=" + City + ", Country=" + Country + '}';
+        return "Address{" + "streetName=" + streetName + ", streetNumber=" + streetNumber + ", suburb=" + suburb + ", city=" + city + ", country=" + country + ", province=" + province + '}';
     }
-    
-   
-
 }
