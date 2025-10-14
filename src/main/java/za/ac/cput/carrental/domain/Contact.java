@@ -6,7 +6,7 @@ package za.ac.cput.carrental.domain;
 
 /**
  *
- * @author Siphokuhle
+ * @author Siphokuhle Nyana
  */
 public class Contact {
     private String email;
