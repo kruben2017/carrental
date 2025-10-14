@@ -58,6 +58,4 @@ public class Contact {
     public String toString() {
         return "Contact{" + "email=" + email + ", mobile=" + mobile + ", homeTelephone=" + homeTelephone + ", workTelephone=" + workTelephone + '}';
     }
-    
-    
 }
